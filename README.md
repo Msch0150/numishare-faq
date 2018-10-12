@@ -25,7 +25,7 @@ Reload configuration
 
     firewall-cmd --reload
 
-## How to enable interal http connection on CentOs
+## How to enable internal http connection on CentOs
 
 If you are using an Apache Frontend with Numishare the the frontend might not be able to communicate with the numishare backend. The error in Apaches error_log might look like:
 
