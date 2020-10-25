@@ -44,3 +44,8 @@ Try to set the following boolean:
 If it solves your problem, make the change permanent using:
 
     /usr/sbin/setsebool -P httpd_can_network_connect 1
+
+## Numishare-docker on Windows
+* Install Docker for Windows
+* Install Linux for Windows (ex. Windows Store > Ubunto)
+* Start Ubunto
