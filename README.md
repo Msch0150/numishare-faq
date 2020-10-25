@@ -47,5 +47,9 @@ If it solves your problem, make the change permanent using:
 
 ## Numishare-docker on Windows
 * Install Docker for Windows
+* Set WSL 2 as default: wsl.exe --set-default-version 2
 * Install Linux for Windows (ex. Windows Store > Ubunto)
+* Enable integration with additional distros: (Ubunto), in Docker Desktop > Settings > Resources
 * Start Ubunto
+
+
