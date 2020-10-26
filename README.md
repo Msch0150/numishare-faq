@@ -46,10 +46,11 @@ If it solves your problem, make the change permanent using:
     /usr/sbin/setsebool -P httpd_can_network_connect 1
 
 ## Numishare-docker on Windows
-* Install Docker for Windows
-* Set WSL 2 as default: wsl.exe --set-default-version 2
-* Install Linux for Windows (ex. Windows Store > Ubunto)
-* Enable integration with additional distros: (Ubunto), in Docker Desktop > Settings > Resources
+* Install Docker for Windows (https://docs.docker.com/docker-for-windows/install/)
+* Set WSL 2 as default: wsl.exe --set-default-version 2 (https://docs.docker.com/docker-for-windows/wsl/)
+* Install Linux for Windows (ex. Windows Store > Ubunto) (https://docs.microsoft.com/de-de/windows/wsl/install-win10)
+* If "docker" cannot be started, then enable integration with additional distros: (Ubunto), in Docker Desktop > Settings > Resources
 * Start Ubunto
+* Follow the installation steps in README.md of Numishare-docker.
 
 
