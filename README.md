@@ -53,7 +53,10 @@ If it solves your problem, make the change permanent using:
 * Start Ubunto
 * Follow the installation steps in README.md of Numishare-docker.
 
-* To access a container:
-docker exec -ti orbeon bash
+* To access a container (example):
+
+  docker exec -ti orbeon bash
+  
+  
 
 
