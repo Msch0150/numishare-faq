@@ -77,4 +77,12 @@ If it solves your problem, make the change permanent using:
     vi /usr/local/projects/mycollection_01/ui/xslt/pages/index.xsl
     # Info: consider to map an external file into the docker container.
 
-
+### (Optional) Assign separate themes
+   mkdir /var/lib/tomcat7/webapps/orbeon/WEB-INF/resources/apps/themes
+   cd /var/lib/tomcat7/webapps/orbeon/WEB-INF/resources/apps/themes
+   ln -s /usr/local/projects/mymint_01 mymint_01
+   ln -s /usr/local/projects/mymint_01 mycollection_01
+   # Login to the admin interface and change for each collection: 
+   # modify settings > Theme and Layout > Theme Folder > "mymint_01" or "mycollection_01"
+   # modify settings > Theme and Layout > Theme URI > <http://localhost:8081>/orbeon/themes/
+   # Info: consider to map an external file (like /usr/local/projects/mymint_01/ui/css/style.css) into the docker container.
