@@ -58,21 +58,21 @@ If it solves your problem, make the change permanent using:
   docker exec -ti orbeon bash
   
 ## Multiple collections with different designs
-# Let's assume the tomcat is installed in /usr/local/tomcat/:
+### Let's assume the tomcat is installed in /usr/local/tomcat/:
     cp -r /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/numishare /usr/local/projects/mymint_01
     cp -r /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/numishare /usr/local/projects/mycollection_01
-# Enter the resource directory:
+### Enter the resource directory:
     cd /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/
     mkdir ./numishare-projects
     cd ./numishare-projects
     ln -s /usr/local/projects/mymint_01 mymint_01
     ln -s /usr/local/projects/mycollection_01 mycollection_01
-# Edit /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/numishare/page-flow.xml and add for for example:
+### Edit /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/numishare/page-flow.xml and add for for example:
     # <page path="/numishare/mymint_01/" model="xpl/models/config.xpl" view="oxf:/numishare-projects/mymint_01/xpl/views/pages/index.xpl"/>
     # <page path="/numishare/mycollection_01/" model="xpl/models/config.xpl" view="oxf:/numishare-projects/mycollection_01/xpl/views/pages/index.xpl"/>
     vi /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/numishare/page-flow.xml
     # Info: consider to map an external file into the docker container.
-# Now you can modify the start page by changing the files:
+### Now you can modify the start page by changing the files:
     vi /usr/local/projects/mymint_01/ui/xslt/pages/index.xsl
     vi /usr/local/projects/mycollection_01/ui/xslt/pages/index.xsl
     # Info: consider to map an external file into the docker container.
