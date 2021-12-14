@@ -93,6 +93,7 @@ If it solves your problem, make the change permanent using:
     # Login to the admin interface and change for each collection: 
     # modify settings > Theme and Layout > Theme Folder > "mymint_01" or "mycollection_01"
     # modify settings > Theme and Layout > Theme URI > <http://localhost:8081>/orbeon/themes/
+    # Modify style.css in /usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/themes/mymint_01/css/ or the linked location.
     # Info: consider to map an external file (like /usr/local/projects/mymint_01/ui/css/style.css) into the docker container.
     
  ### Info for images
