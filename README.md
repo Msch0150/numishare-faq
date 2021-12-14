@@ -80,9 +80,12 @@ If it solves your problem, make the change permanent using:
 ### (Optional) Assign separate themes
     mkdir /var/lib/tomcat7/webapps/orbeon/WEB-INF/resources/apps/themes
     cd /var/lib/tomcat7/webapps/orbeon/WEB-INF/resources/apps/themes
-    ln -s /usr/local/projects/mymint_01 mymint_01
-    ln -s /usr/local/projects/mymint_01 mycollection_01
+    ln -s /usr/local/projects/mymint_01/ui mymint_01
+    ln -s /usr/local/projects/mymint_01/ui mycollection_01
     # Login to the admin interface and change for each collection: 
     # modify settings > Theme and Layout > Theme Folder > "mymint_01" or "mycollection_01"
     # modify settings > Theme and Layout > Theme URI > <http://localhost:8081>/orbeon/themes/
     # Info: consider to map an external file (like /usr/local/projects/mymint_01/ui/css/style.css) into the docker container.
+    
+ ### Info for images
+    If you use a separate theme, then the images are in "/usr/local/tomcat/webapps/orbeon/WEB-INF/resources/apps/themes/mymint_01/images" or (due to the symbolic link) in the folder "/usr/local/projects/alpen/ui/images"
