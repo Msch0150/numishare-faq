@@ -79,9 +79,11 @@ If it solves your problem, make the change permanent using:
     Example:
     <body>
         <xsl:call-template name="header"/>
-        <img src="images/banner.jpg" style="width:100%"/>
+        <img src="{$include_path}/images/banner.jpg" style="width:100%"/>
         ...
     </body>
+    will force to load the image via:
+        http://localhost:8081/orbeon/themes/mymint_01/images/banner.jpg
 
 ### (Optional) Assign separate themes
     mkdir /var/lib/tomcat7/webapps/orbeon/WEB-INF/resources/apps/themes
