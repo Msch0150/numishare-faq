@@ -76,6 +76,12 @@ If it solves your problem, make the change permanent using:
     vi /usr/local/projects/mymint_01/ui/xslt/pages/index.xsl
     vi /usr/local/projects/mycollection_01/ui/xslt/pages/index.xsl
     # Info: consider to map an external file into the docker container.
+    Example:
+    <body>
+        <xsl:call-template name="header"/>
+        <img src="images/banner.jpg" style="width:100%"/>
+        ...
+    </body>
 
 ### (Optional) Assign separate themes
     mkdir /var/lib/tomcat7/webapps/orbeon/WEB-INF/resources/apps/themes
