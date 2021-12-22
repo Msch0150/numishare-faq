@@ -1,5 +1,9 @@
 # numishare-faq
 
+## "Error saving Numishare configuration file."
+Problem occures when not all required fields are filled. Example: 
+If the Collection Type is "cointype" and no "Type Series" is entered.
+
 ## Orbeon error after uploading xxx.xml to objects folder
 The error occured when trying to edit the onbject:
 
