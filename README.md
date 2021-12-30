@@ -106,19 +106,19 @@ If it solves your problem, make the change permanent using:
 ### fuseki: java.io.IOException: Cannot run program "ps": error=2, No such file or directory
 
 (from https://github.com/stain/jena-docker/issues/34)
-'''
+
     docker run --name fuseki-data -v /fuseki busybox
     docker run -d --name fuseki -p 3030:3030 --volumes-from fuseki-data stain/jena-fuseki
     NO DATA UPLOADING BEFORE RUNNING COMMANDS BELOW
     Run the commands:
 
-docker exec -it fuseki bash
+    docker exec -it fuseki bash
 
-root@7fc3133f5863:/jena-fuseki# apt-get update
-root@7fc3133f5863:/jena-fuseki# apt-get install -y procps
-root@7fc3133f5863:/jena-fuseki# exit
+    root@7fc3133f5863:/jena-fuseki# apt-get update
+    root@7fc3133f5863:/jena-fuseki# apt-get install -y procps
+    root@7fc3133f5863:/jena-fuseki# exit
 
     Run docker restart fuseki to see if it throws errors.
     Upload data (I uploaded the pizza ontology)
     Run docker restart fuseki again to see if it throws errors.
-'''
+
