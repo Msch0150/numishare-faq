@@ -127,16 +127,19 @@ If it solves your problem, make the change permanent using:
 See https://github.com/ewg118/numishare/issues/108
 
 If you want to add a page which is not visible in the main menu, change the public number (found out by experiment)
+
+```
     ...
     </content>
     </page>
     <page public="2" stub="rechtliches" id="rechtliches">
-    <content lang="en">
+    <content lang="de">
         <title>Rechtliches</title>
         <short-title>Rechtliches</short-title>
         <text>
             <h2>Rechtliche Informationen</h2>
     ...
-            
+```
+
   It can be accessed by: http://localhost/orbeon/numishare/myinstance/pages/rechtliches?lang=de
             
