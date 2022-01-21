@@ -143,3 +143,10 @@ If you want to add a page which is not visible in the main menu, change the publ
 
   It can be accessed by: http://localhost/orbeon/numishare/myinstance/pages/rechtliches?lang=de
             
+## How to clear cache in loris (iiif)
+
+Example:
+```
+cd /tmp/loris/cache/img/lvr-lmb/jpg
+rm *.jpg
+```
