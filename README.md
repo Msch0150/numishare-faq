@@ -141,6 +141,7 @@ If you want to add a page which is not visible in the main menu, change the publ
     ...
 ```
 
+
   It can be accessed by: http://localhost/orbeon/numishare/myinstance/pages/rechtliches?lang=de
             
 ## How to clear cache in loris (iiif)
@@ -150,3 +151,29 @@ Example:
 cd /tmp/loris/cache/img/lvr-lmb/jpg
 rm *.jpg
 ```
+
+
+## Cannot click on item in public UI
+System runs into a timeout (502)
+Access of Numishare Admin UI works
+Creating a collection works
+Creating a coin does not work (browser does not respond)
+
+It looks like, that this was an issue with http://nomisma.org/. http://nomisma.org/browse return after a while: 
+Service Unavailable
+
+The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later.
+
+Info: 
+During troubleshooting I did see in /usr/local/tomcat/logs/orbeon.log:
+
+2023-05-20 19:56:11,482 ERROR XFormsServer  - xforms-submit-error - xf:submission for submission id: nuds-to-solr, error code received when submitting instance: 503
+
+2023-05-20 19:11:59,762 ERROR PageFlowControllerProcessor  - error caught {controller: "oxf:/page-flow.xml", method: "GET", path: "/numishare/admin/edit/coin/"}
+2023-05-20 19:11:59,767 ERROR PageFlowControllerProcessor  -
++----------------------------------------------------------------------------------------------------------------------+
+|An Error has Occurred                                                                                                 |
+|----------------------------------------------------------------------------------------------------------------------|
+|org.orbeon.oxf.common.ValidationException: oxf:/config/theme-plain.xsl (executing XSLT transformation): null          |
+
+
