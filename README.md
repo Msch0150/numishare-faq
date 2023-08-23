@@ -6,7 +6,8 @@ Error can be seen when performing the following steps:
 Start docker compose in terminal to be able to watch the console (or check the log files).
 Login the the admin UI and open the "bad" collection.
 Publish (or reindex(?)) all approved objects. The following error appears in the console:
-ERROR (qtp1527152775-21) [   x:numishare] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=adolph_hess_nachfolger_1917_jan_1917_nr_1276_-_sammlung_weygand] multiple values encountered for non multiValued field obv_leg_display: [+mOne o o nOVA{star_over_star}MOeRSSenCIS, cross_over_cross}VINC*CO*MOeRS'*eT*SnR]
+
+    ERROR (qtp1527152775-21) [   x:numishare] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=adolph_hess_nachfolger_1917_jan_1917_nr_1276_-_sammlung_weygand] multiple values encountered for non multiValued field obv_leg_display: [+mOne o o nOVA{star_over_star}MOeRSSenCIS, cross_over_cross}VINC*CO*MOeRS'*eT*SnR]
 
 here the problem occured due to a ";" in the legend in the xml file.
 Remove the ";" and this should foix the problem.
