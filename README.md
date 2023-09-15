@@ -71,6 +71,10 @@ If it solves your problem, make the change permanent using:
     
 "isReplacedBy" can be used with full URL as well.
 
+Data can be seen by appending ".xml". Example from OCRE:
+    http://numismatics.org/ocre/id/ric.2.hdn.914.xml
+    
+
 ## Numishare-docker on Windows
 * Install Docker for Windows (https://docs.docker.com/docker-for-windows/install/)
 * Set WSL 2 as default: wsl.exe --set-default-version 2 (https://docs.docker.com/docker-for-windows/wsl/)
