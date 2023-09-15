@@ -68,8 +68,9 @@ If it solves your problem, make the change permanent using:
         <publicationStatus>deprecatedType</publicationStatus>
         <otherRecordId semantic="dcterms:isReplacedBy">ric.2_3(2).hdn.1921</otherRecordId>
         <otherRecordId semantic="skos:exactMatch">http://numismatics.org/ocre/id/ric.2_3(2).hdn.1921</otherRecordId>
+        <maintenanceStatus>cancelledReplaced</maintenanceStatus>
     
-"isReplacedBy" can be used with full URL as well.
+"isReplacedBy" can be used with full URL as well. Property "exactMatch" seems to be optional.
 
 Data can be seen by appending ".xml". Example from OCRE:
     http://numismatics.org/ocre/id/ric.2.hdn.914.xml
